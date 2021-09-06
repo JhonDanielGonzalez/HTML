@@ -1,0 +1,178 @@
+<!-- Etiqueta usada para decirle al navegador qué versión debe renderizar en este caso será HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <!--Etiqueta usada para optimización para móviles diciendo que el-->
+    <!--width(ancho) es igual al tamaño de la pantalla actual-->
+    <!--user-scalable=no significa que el usuario no puede hacer zoom sobre la página evitando que el usuario genere una distorsión en la visualización-->
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña d, user-scalable=no'el navegador web-->
+    <title>Hoja de vida</title>
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Jhon Daniel Gonzalez Lopez'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='hoja de vida, jhon, daniel, gonzalez, curriculum, html'>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='página principal, hoja de vida'>
+    <!-- referenciamos la hoja de estilos css para que cuando el navegador lo lea, cargue los estilos. -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />.
+  </head>
+  <body>
+    <header>
+        <!-- Logo.-->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo"/ title="Jhon Daniel Gonzalez Lopez">
+        </div>
+        <!-- Título.-->
+        <h1>Hoja de Vida</h1>
+    </header>
+    <!-- Menú navegable para enlazar las tres páginas que tiene el proyecto: Inicio (index.html), educación (educacion.html), experiencia (experiencia.html).-->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="educacion.html">Educación</a>
+            </li>
+            <li>
+                <a href="experiencia.html">Experiencia</a>
+            </li>            
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="secundario">
+            <h2>Educación</h2>
+            <table border="1">
+                <!--Cabecera de la tabla-->
+                <thead>
+                    <tr>
+                        <th>Institución</th>
+                        <th>Lugar</th>
+                        <th>Nivel de estudio</th>
+                        <th>¿Culminó?</th>
+                        <th>Año de finalización</th>
+                    </tr>
+                </thead>
+                <!--Cuerpo de la tabla-->
+                <tbody>
+                    <!--Fila-->
+                    <tr>
+                        <!--Columna-->
+                        <td>Universidad de Manizales</td>
+                        <td>Manizales, Caldas</td>
+                        <td>Pregrado</td>
+                        <td>No</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>SENA</td>
+                        <td>Manizales, Caldas</td>
+                        <td>Tecnólogo</td>
+                        <td>Si</td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td>Institución Educativa Nuestra Señora el Carmen (IENSEC)</td>
+                        <td>La Dorada, Caldas</td>
+                        <td>Bachillerato</td>
+                        <td>Si</td>
+                        <td>2012</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+
+            <hr />
+
+            <h2>Agregar Educación</h2>
+
+          <!--   <form>
+
+                <label>Institución:</label>
+                <input type="text" required="required"/><br />
+
+                <label>Lugar:</label>
+                <textarea name="Lugar" rows="10" cols="40" required="required"></textarea><br />
+
+                <label>Nivel de estudio:</label>
+                <select>
+                    <option value="bachiller">Bachiller</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="tecnologo">Tecnólogo</option>
+                    <option value="pregrado">Pregrado</option>
+                    <option value="postgrado">Postgrado</option>
+                    <option value="maestria">Maestría</option>
+                    <option value="doctorado">Doctorado</option>
+                </select><br />
+
+                <label>¿Culminó?:</label>
+                <input type="radio" id="si" name="culmino" value="Si" required="required">
+                <label for="si">Si</label>
+                
+                <input type="radio" id="css" name="culmino" value="No">
+                <label for="no">No</label><br />
+
+                <label>Año</label>
+                <input type="number" min="1900" max="2099" step="1" value="2021" /><br />
+
+                <input type="submit" value="Enviar" />
+            </form> -->
+
+            <form>
+                <fieldset>
+                    <legend>Educación</legend>
+                    <p>
+                        <label>Institución:</label>
+                        <input type="text" required="required"/>
+                    </p>
+                    <p>
+                        <label>Lugar:</label>
+                        <textarea name="Lugar" rows="10" cols="40" required="required"></textarea>
+                    </p>
+                    <p>
+                        <label>Nivel de estudio:</label>
+                        <select>
+                            <option value="bachiller">Bachiller</option>
+                            <option value="tecnico">Técnico</option>
+                            <option value="tecnologo">Tecnólogo</option>
+                            <option value="pregrado">Pregrado</option>
+                            <option value="postgrado">Postgrado</option>
+                            <option value="maestria">Maestría</option>
+                            <option value="doctorado">Doctorado</option>
+                        </select><br />
+                    </p>
+                    <p>
+                        <label>¿Culminó?:</label>
+                        <input type="radio" id="si" name="culmino" value="Si" required="required">
+                        <label for="si">Si</label>
+                
+                        <input type="radio" id="no" name="culmino" value="No">
+                        <label for="no">No</label><br />
+                    </p>
+                    <p>
+                        <label>Año</label>
+                        <input type="number" min="1900" max="2099" step="1" value="2021" /><br />
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar" />
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <br />
+
+        <!-- Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.-->
+        <footer>
+            <p>Jhon Daniel Gonzalez Lopez &copy; 2021</p>
+            <ul>
+                <li>Email: jdgonzalez366@misena.edu.co</li>
+                <li>Teléfono: 3135067645</li>
+                <li>Dirección: Calle 50 # 31-52</li>
+            </ul>
+        </footer>
+    </div>
+  </body>
+</html>

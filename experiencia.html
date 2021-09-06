@@ -1,0 +1,88 @@
+<!-- Etiqueta usada para decirle al navegador qué versión debe renderizar en este caso será HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <!--Etiqueta usada para optimización para móviles diciendo que el-->
+    <!--width(ancho) es igual al tamaño de la pantalla actual-->
+    <!--user-scalable=no significa que el usuario no puede hacer zoom sobre la página evitando que el usuario genere una distorsión en la visualización-->
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña d, user-scalable=no'el navegador web-->
+    <title>Hoja de vida</title>
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Jhon Daniel Gonzalez Lopez'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='hoja de vida, jhon, daniel, gonzalez, curriculum, html'>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='página principal, hoja de vida'>
+    <!-- referenciamos la hoja de estilos css para que cuando el navegador lo lea, cargue los estilos. -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />.
+  </head>
+  <body>
+    <header>
+        <!-- Logo.-->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo"/ title="Jhon Daniel Gonzalez Lopez">
+        </div>
+        <!-- Título.-->
+        <h1>Hoja de Vida</h1>
+    </header>
+    <!-- Menú navegable para enlazar las tres páginas que tiene el proyecto: Inicio (index.html), educación (educacion.html), experiencia (experiencia.html).-->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="educacion.html">Educación</a>
+            </li>
+            <li>
+                <a href="experiencia.html">Experiencia</a>
+            </li>            
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- Título en h2 Experiencia.-->
+        <h2>Experiencia</h2>
+
+        <br/>
+        <hr />
+        <br/>
+
+        <h2>Video - Presentación Hoja de Vida</h2>
+        <!--Etiqueta usada para colocar video en nuestra web pero se debe colocar con el atributo controls ya que este coloca barra de reproducción botón de pausa y volumen-->
+        <!--el atributo poster sirve para colocar una imagen de previsualización-->
+        <video width='320' height='240' controls poster='img/logo.png'>
+          <!--Se colocan diferentes versiones de video para que el navegador tome alguna ya que los navegadores no tiene compatibilidad con los formatos de video-->
+          <source src='video/SampleVideo_1280x720_5mb.mp4' type='video/mp4'>
+          <!--<source src='movie.ogg' type='video/ogg'>-->
+          <!--Si ninguno de estos formatos es compatible con el navegador se muestra un mensaje-->
+          Tu Navegador no soporta este elemento de video
+        </video>
+        <br/>
+        <br/>
+        <hr />
+        <br/>
+        <h2>Audio - Presentación Hoja de Vida</h2>
+        <!--Etiqueta usada para colocar audio en nuestra web pero se debe colocar con el atributo controls ya que este coloca barra de reproducción botón de pausa y volumen-->
+        <audio controls>
+          <!--Se colocan diferentes versiones de audio para que el navegador tome alguna ya que los navegadores no tiene compatibilidad con todos los formatos de audio-->
+          <!--<source src='audio/Canon.ogg' type='audio/ogg'>-->
+          <source src='audio/sample1.mp3' type='audio/mpeg'>
+          <!--Si ninguno de estos formatos es compatible con el navegador se muestra un mensaje-->
+          Tu Navegador no soporta este elemento de audio
+        </audio>
+
+        <!-- Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.-->
+        <footer>
+           <p>Jhon Daniel Gonzalez Lopez &copy; 2021</p>
+            <ul>
+                <li>Email: jdgonzalez366@misena.edu.co</li>
+                <li>Teléfono: 3135067645</li>
+                <li>Dirección: Calle 50 # 31-52</li>
+            </ul>
+        </footer>
+    </div>
+  </body>
+</html>

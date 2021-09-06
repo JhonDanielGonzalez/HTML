@@ -1,0 +1,79 @@
+<!-- Etiqueta usada para decirle al navegador qué versión debe renderizar en este caso será HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <!--Etiqueta usada para optimización para móviles diciendo que el-->
+    <!--width(ancho) es igual al tamaño de la pantalla actual-->
+    <!--user-scalable=no significa que el usuario no puede hacer zoom sobre la página evitando que el usuario genere una distorsión en la visualización-->
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña d, user-scalable=no'el navegador web-->
+    <title>Hoja de vida</title>
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Jhon Daniel Gonzalez Lopez'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='hoja de vida, jhon, daniel, gonzalez, curriculum, html'>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='página principal, hoja de vida'>
+    <!-- referenciamos la hoja de estilos css para que cuando el navegador lo lea, cargue los estilos. -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />.
+  </head>
+  <body>
+    <header>
+        <!-- Logo.-->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo"/ title="Jhon Daniel Gonzalez Lopez">
+        </div>
+        <!-- Título.-->
+        <h1>Hoja de Vida</h1>
+    </header>
+    <!-- Menú navegable para enlazar las tres páginas que tiene el proyecto: Inicio (index.html), educación (educacion.html), experiencia (experiencia.html).-->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="educacion.html">Educación</a>
+            </li>
+            <li>
+                <a href="experiencia.html">Experiencia</a>
+            </li>            
+        </ul>
+    </nav>
+
+    <div id="content">
+        <!-- Título en h2 Información Personal con Foto acorde con la hoja de vida.-->
+        <h2>Información Personal</h2>
+        <img src="img/foto-Daniel.jpg" alt="Foto"/ title="Jhon Daniel Gonzalez Lopez">
+        <!-- Datos Personales nombres, apellidos, fecha y lugar de nacimiento.-->
+        <ul>
+            <li><b>Nombres: </b>Jhon Daniel</li>
+            <li><b>Apellidos: </b>Gonzalez Lopez</li>
+            <li><b>Fecha y lugar de nacimiento: </b>18/03/1996, La Dorada-Caldas</li>
+        </ul>
+
+        <hr />
+
+        <!-- Perfil redacta un parráfo y describe habilidades y destrezas que te definen como un exitoso profesional en tu área de conocimiento y agrega una lista no numerada (viñetas) con los idiomas que comprendes, hablas y escribes.-->
+        <section id="principal">
+            <article class="article">
+                <h2>Información de Perfil</h2>
+                <p>Tecnólogo en Análisis y desarrollo de sistemas de información, Estudiante de X semestre de Ingeniería de sistemas y las telecomunicaciones, con experiencia de 15 meses en análisis, diseño y desarrollo de sistemas de información, manejo y gestión de base de datos con soporte técnico en sistemas, redes, equipos y cableado. Tengo habilidad y conocimientos en Bases de Datos, en Análisis, diseño y desarrollo de sistema de información, servicio de soporte técnico, mantenimiento y solución a problemas en infraestructura TI. Responsable, disciplinado Con Orientación a Resultados de metas, Capacidad de planificación y Organización, Capacidad de Análisis.</p>
+            </article>
+        </section> 
+
+        <!-- Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.-->
+        <footer>
+           <p>Jhon Daniel Gonzalez Lopez &copy; 2021</p>
+           <!-- <p>Email: jdgonzalez366@misena.edu.co</p> -->
+            <ul>
+                <li>Email: jdgonzalez366@misena.edu.co</li>
+                <li>Teléfono: 3135067645</li>
+                <li>Dirección: Calle 50 # 31-52</li>
+            </ul>
+        </footer>
+    </div>
+  </body>
+</html>
